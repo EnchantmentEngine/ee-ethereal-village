@@ -1,0 +1,764 @@
+{
+  "asset": {
+    "generator": "IREngine.SceneExporter",
+    "version": "2.0"
+  },
+  "nodes": [
+    {
+      "name": "Settings",
+      "extensions": {
+        "EE_uuid": {
+          "entityID": "0d5a20e1-abe2-455e-9963-d5e1e19fca19"
+        },
+        "EE_envmapbake": {
+          "bakePositionOffset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "bakeScale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "bakeType": "Baked",
+          "resolution": 2048,
+          "refreshMode": "OnAwake",
+          "envMapOrigin": "__$project$__/ir-engine/default-project/public/scenes/default.envmap.ktx2",
+          "boxProjection": true
+        },
+        "EE_fog": {
+          "type": "exponential",
+          "color": "#c7b5eb",
+          "density": 0.0020000000000000018,
+          "near": 1,
+          "far": 1000,
+          "timeScale": 1,
+          "height": 0.05
+        },
+        "EE_camera_settings": {
+          "cameraNearClip": 0.1,
+          "cameraFarClip": 732.9950337237495,
+          "projectionType": 1,
+          "fov": 50,
+          "cameraMode": "FOLLOW",
+          "minPhi": -70,
+          "maxPhi": 85,
+          "isAvatarVisible": true,
+          "followCameraScrollSensitivity": 1,
+          "canCameraFirstPerson": true,
+          "canCameraThirdPerson": true,
+          "canCameraTopDown": true,
+          "isFistPersonFreeCamera": true,
+          "isThirdPersonFreeCamera": true,
+          "isTopDownFreeCamera": false,
+          "firstPersonCameraLimits": 360,
+          "thirdPersonCameraLimits": 360,
+          "topDownCameraLimits": 360,
+          "isFirstPersonCameraReset": false,
+          "isThirdPersonCameraReset": false,
+          "isTopDownCameraReset": false,
+          "thirdPersonMinDistance": 1.5,
+          "thirdPersonMaxDistance": 50,
+          "thirdPersonDefaultDistance": 3,
+          "topDownMinDistance": 10,
+          "topDownMaxDistance": 70,
+          "topDownDefaultDistance": 40,
+          "poiEntities": [],
+          "poiLerpSpeed": 0.5,
+          "scrollDeadzone": 1,
+          "scrollSensitivity": 0.1,
+          "scrollDistancePerPoi": 3,
+          "scrollBehavior": "Clamp",
+          "poiScrollTransitionType": "Scrolling",
+          "enableTransitionButtons": false
+        },
+        "EE_postprocessing": {
+          "enabled": true,
+          "effects": {
+            "SSREffect": {
+              "isActive": false,
+              "distance": 10,
+              "thickness": 10,
+              "autoThickness": false,
+              "maxRoughness": 1,
+              "blend": 0.9,
+              "denoiseIterations": 1,
+              "denoiseKernel": 2,
+              "denoiseDiffuse": 10,
+              "denoiseSpecular": 10,
+              "depthPhi": 2,
+              "normalPhi": 50,
+              "roughnessPhi": 1,
+              "envBlur": 0.5,
+              "importanceSampling": true,
+              "directLightMultiplier": 1,
+              "steps": 20,
+              "refineSteps": 5,
+              "spp": 1,
+              "resolutionScale": 1,
+              "missedRays": false
+            },
+            "DepthOfFieldEffect": {
+              "isActive": false,
+              "blendFunction": 23,
+              "focusDistance": 0.09,
+              "focalLength": 0.5,
+              "bokehScale": 0.89,
+              "focalRange": 0.41,
+              "resolutionScale": 0.76
+            },
+            "BloomEffect": {
+              "isActive": true,
+              "blendFunction": 28,
+              "kernelSize": 2,
+              "luminanceThreshold": 0.73,
+              "luminanceSmoothing": 0.18,
+              "intensity": 0.98
+            },
+            "ToneMappingEffect": {
+              "isActive": false,
+              "blendFunction": 23,
+              "adaptive": true,
+              "resolution": 512,
+              "middleGrey": 0.6,
+              "maxLuminance": 32,
+              "averageLuminance": 1,
+              "adaptationRate": 2
+            },
+            "BrightnessContrastEffect": {
+              "isActive": false,
+              "brightness": 0.05,
+              "contrast": 0.1
+            },
+            "HueSaturationEffect": {
+              "isActive": false,
+              "hue": 0,
+              "saturation": -0.15
+            },
+            "ColorDepthEffect": {
+              "isActive": false,
+              "bits": 16
+            },
+            "LinearTosRGBEffect": {
+              "isActive": false
+            },
+            "SSGIEffect": {
+              "isActive": false,
+              "distance": 10,
+              "thickness": 10,
+              "autoThickness": false,
+              "maxRoughness": 1,
+              "blend": 0.9,
+              "denoiseIterations": 1,
+              "denoiseKernel": 2,
+              "denoiseDiffuse": 10,
+              "denoiseSpecular": 10,
+              "depthPhi": 2,
+              "normalPhi": 50,
+              "roughnessPhi": 1,
+              "envBlur": 0.5,
+              "importanceSampling": true,
+              "directLightMultiplier": 1,
+              "steps": 20,
+              "refineSteps": 5,
+              "spp": 1,
+              "resolutionScale": 1,
+              "missedRays": false
+            },
+            "TRAAEffect": {
+              "isActive": false,
+              "blend": 0.8,
+              "constantBlend": true,
+              "dilation": true,
+              "blockySampling": false,
+              "logTransform": false,
+              "depthDistance": 10,
+              "worldDistance": 5,
+              "neighborhoodClamping": true
+            },
+            "MotionBlurEffect": {
+              "isActive": false,
+              "intensity": 1,
+              "jitter": 1,
+              "samples": 16
+            },
+            "ChromaticAberrationEffect": {
+              "isActive": false,
+              "offset": {
+                "x": 0.001,
+                "y": 0.0005
+              },
+              "radialModulation": false,
+              "modulationOffset": 0.15
+            },
+            "ColorAverageEffect": {
+              "isActive": false,
+              "blendFunction": 23
+            },
+            "DotScreenEffect": {
+              "isActive": false,
+              "blendFunction": 23,
+              "angle": 1.5707963267948966,
+              "scale": 1
+            },
+            "FXAAEffect": {
+              "isActive": true,
+              "blendFunction": 30
+            },
+            "GlitchEffect": {
+              "isActive": false,
+              "blendFunction": 23,
+              "delay": {
+                "x": 1.5,
+                "y": 3.5
+              },
+              "duration": {
+                "x": 0.6,
+                "y": 1
+              },
+              "strength": {
+                "x": 0.3,
+                "y": 1
+              },
+              "dtSize": 64,
+              "columns": 0.05,
+              "ratio": 0.85
+            },
+            "GridEffect": {
+              "isActive": false,
+              "blendFunction": 24,
+              "scale": 1,
+              "lineWidth": 0
+            },
+            "LensDistortionEffect": {
+              "isActive": false,
+              "distortion": {
+                "x": 0,
+                "y": 0
+              },
+              "principalPoint": {
+                "x": 0,
+                "y": 0
+              },
+              "focalLength": {
+                "x": 1,
+                "y": 1
+              },
+              "skew": 0
+            },
+            "LUT1DEffect": {
+              "isActive": false,
+              "blendFunction": 30
+            },
+            "LUT3DEffect": {
+              "isActive": false,
+              "blendFunction": 30
+            },
+            "NoiseEffect": {
+              "isActive": false,
+              "blendFunction": 28,
+              "premultiply": false
+            },
+            "PixelationEffect": {
+              "isActive": false,
+              "granularity": 30
+            },
+            "ScanlineEffect": {
+              "isActive": false,
+              "blendFunction": 24,
+              "density": 1.25,
+              "scrollSpeed": 0
+            },
+            "ShockWaveEffect": {
+              "isActive": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "speed": 2,
+              "maxRadius": 1,
+              "waveSize": 0.2,
+              "amplitude": 0.05
+            },
+            "TextureEffect": {
+              "isActive": false,
+              "blendFunction": 23,
+              "aspectCorrection": false
+            },
+            "TiltShiftEffect": {
+              "isActive": false,
+              "blendFunction": 23,
+              "offset": 0,
+              "rotation": 0,
+              "focusArea": 0.4,
+              "feather": 0.3,
+              "kernelSize": 2,
+              "resolutionScale": 0.5,
+              "resolutionX": -1,
+              "resolutionY": -1
+            },
+            "VignetteEffect": {
+              "isActive": false,
+              "blendFunction": 23,
+              "technique": 0,
+              "eskil": false,
+              "offset": 0.5,
+              "darkness": 0.5
+            },
+            "SMAAEffect": {
+              "isActive": false,
+              "preset": 1,
+              "edgeDetectionMode": 2,
+              "predicationMode": 0
+            },
+            "SSAOEffect": {
+              "isActive": true,
+              "blendFunction": 21,
+              "distanceScaling": true,
+              "depthAwareUpsampling": true,
+              "samples": 15,
+              "rings": 0.42,
+              "distanceThreshold": 0.24,
+              "distanceFalloff": 0.142,
+              "rangeThreshold": 0.0262,
+              "rangeFalloff": 0.001,
+              "minRadiusScale": 0.28,
+              "luminanceInfluence": 0.1,
+              "bias": 0.11,
+              "radius": 0.1825,
+              "intensity": 2.87,
+              "fade": 0.01,
+              "resolutionScale": 4.31,
+              "resolutionX": -1,
+              "resolutionY": -1,
+              "width": -1,
+              "height": -1,
+              "blur": true,
+              "kernelSize": 1
+            }
+          }
+        },
+        "EE_render_settings": {
+          "primaryLight": "cb045cfd-8daf-4a2b-b764-35625be54a11",
+          "csm": true,
+          "cascades": 4,
+          "toneMapping": 1,
+          "toneMappingExposure": 0.8,
+          "shadowMapType": 2
+        },
+        "EE_scene_settings": {
+          "thumbnailURL": "__$project$__/ir-engine/default-project/public/scenes/default.thumbnail.jpg",
+          "loadingScreenURL": "__$project$__/ir-engine/default-project/public/scenes/default.loadingscreen.ktx2",
+          "primaryColor": "#B3B3B3",
+          "backgroundColor": "#2C2C2C",
+          "alternativeColor": "#A1A1A1",
+          "sceneKillHeight": -10,
+          "spectateEntity": ""
+        },
+        "EE_visible": {}
+      }
+    },
+    {
+      "name": "scene preview camera",
+      "matrix": [
+        0.9929053098935701,
+        -1.107273994715996e-14,
+        -0.11890771877869771,
+        0,
+        0.022111002227911368,
+        0.9825590300083846,
+        0.18463167693941357,
+        0,
+        0.11683385282370498,
+        -0.1859509412425296,
+        0.975588078179201,
+        0,
+        55.27397916988161,
+        11.920701387736658,
+        58.31902523515636,
+        1
+      ],
+      "extensions": {
+        "EE_uuid": {
+          "entityID": "bb362197-f14d-4da7-9c3c-1ed834386423"
+        },
+        "EE_scene_preview_camera": {},
+        "EE_visible": {}
+      }
+    },
+    {
+      "name": "Skybox",
+      "extensions": {
+        "EE_uuid": {
+          "entityID": "e7d6bfb1-6390-4a8b-b744-da83b059c2d3"
+        },
+        "EE_visible": {},
+        "EE_skybox": {
+          "backgroundColor": 3026478,
+          "equirectangularPath": "__$project$__/ir-engine/default-project/assets/generic_midday_02.ktx2?hash=19535b",
+          "cubemapPath": "__$project$__/ir-engine/default-project/assets/skyboxsun25deg/",
+          "backgroundType": 2,
+          "skyboxProps": {
+            "turbidity": 10,
+            "rayleigh": 1,
+            "luminance": 1,
+            "mieCoefficient": 0.004999999999999893,
+            "mieDirectionalG": 0.99,
+            "inclination": 0.10471975511965978,
+            "azimuth": 0.20833333333333334
+          }
+        }
+      }
+    },
+    {
+      "name": "spawn point",
+      "matrix": [
+        -1,
+        1.0106430996148606e-15,
+        -1.224646852585167e-16,
+        0,
+        1.0106430996148606e-15,
+        1,
+        1.2246467991473547e-16,
+        0,
+        1.2246468525851686e-16,
+        1.2246467991473532e-16,
+        -1,
+        0,
+        55.26190000895484,
+        10.169746412899563,
+        58.41344773280081,
+        1
+      ],
+      "extensions": {
+        "EE_uuid": {
+          "entityID": "3e8a430e-9dcf-440e-990c-44ecb8051762"
+        },
+        "EE_visible": {},
+        "EE_spawn_point": {
+          "permissionedUsers": []
+        }
+      }
+    },
+    {
+      "name": "directional light",
+      "matrix": [
+        0.9460853588275455,
+        3.3306690738754706e-16,
+        -0.32391741819814956,
+        0,
+        0.3040995162518745,
+        0.3444135369357192,
+        0.8882020039331165,
+        0,
+        0.1115615436767114,
+        -0.9388180417820201,
+        0.3258446046768936,
+        0,
+        -2.9000000000000004,
+        0,
+        0,
+        1
+      ],
+      "extensions": {
+        "EE_uuid": {
+          "entityID": "cb045cfd-8daf-4a2b-b764-35625be54a11"
+        },
+        "EE_directional_light": {
+          "color": 16777215,
+          "intensity": 3,
+          "castShadow": true,
+          "shadowBias": -0.00001,
+          "shadowRadius": 1,
+          "cameraFar": 200
+        },
+        "EE_visible": {}
+      }
+    },
+    {
+      "name": "ethereal_village",
+      "extensions": {
+        "EE_uuid": {
+          "entityID": "61ec7799-8bdb-4b95-bf5f-6b090dd0be45"
+        },
+        "EE_model": {
+          "src": "__$project$__/ir-engine/ir-ethereal-village/assets/ethereal_village.glb?hash=4faa5d",
+          "cameraOcclusion": true,
+          "applyColliders": false,
+          "shape": "box"
+        },
+        "EE_shadow": {
+          "cast": true,
+          "receive": true
+        },
+        "EE_envmap": {
+          "type": "Skybox",
+          "envMapSourceColor": 8421631,
+          "envMapSourceURL": "",
+          "envMapCubemapURL": "",
+          "envMapSourceEntityUUID": "",
+          "envMapIntensity": 0.25
+        },
+        "EE_visible": {}
+      }
+    },
+    {
+      "name": "terrain-collision",
+      "extensions": {
+        "EE_uuid": {
+          "entityID": "ea8f05c4-6c42-4bc1-9131-d6a0786c3f73"
+        },
+        "EE_model": {
+          "src": "__$project$__/ir-engine/ir-ethereal-village/assets/terrain-collision.glb?hash=be3746",
+          "cameraOcclusion": true,
+          "applyColliders": true,
+          "shape": "mesh"
+        },
+        "EE_shadow": {
+          "cast": true,
+          "receive": true
+        },
+        "EE_envmap": {
+          "type": "Skybox",
+          "envMapSourceColor": 8421631,
+          "envMapSourceURL": "",
+          "envMapCubemapURL": "",
+          "envMapSourceEntityUUID": "",
+          "envMapIntensity": 1
+        },
+        "EE_rigidbody": {
+          "type": "fixed",
+          "ccd": false,
+          "allowRolling": true,
+          "enabledRotations": [
+            true,
+            true,
+            true
+          ],
+          "canSleep": true,
+          "gravityScale": 1
+        }
+      }
+    },
+    {
+      "name": "terrain",
+      "extensions": {
+        "EE_uuid": {
+          "entityID": "4f1a8fc4-d3c4-44e2-9309-ac4ab894d3e9"
+        },
+        "EE_model": {
+          "src": "__$project$__/ir-engine/ir-ethereal-village/assets/terrain2.glb",
+          "cameraOcclusion": true,
+          "applyColliders": false,
+          "shape": "box"
+        },
+        "EE_shadow": {
+          "cast": true,
+          "receive": true
+        },
+        "EE_envmap": {
+          "type": "Skybox",
+          "envMapSourceColor": 8421631,
+          "envMapSourceURL": "",
+          "envMapCubemapURL": "",
+          "envMapSourceEntityUUID": "",
+          "envMapIntensity": 0.25
+        },
+        "EE_visible": {}
+      }
+    },
+    {
+      "name": "colliders",
+      "extensions": {
+        "EE_uuid": {
+          "entityID": "325c1d01-44c6-4d88-b263-a89140c5f7b7"
+        },
+        "EE_model": {
+          "src": "__$project$__/ir-engine/ir-ethereal-village/assets/colliders.glb?hash=8ea226",
+          "cameraOcclusion": true,
+          "applyColliders": true,
+          "shape": "mesh"
+        },
+        "EE_shadow": {
+          "cast": true,
+          "receive": true
+        },
+        "EE_envmap": {
+          "type": "Skybox",
+          "envMapSourceColor": 8421631,
+          "envMapSourceURL": "",
+          "envMapCubemapURL": "",
+          "envMapSourceEntityUUID": "",
+          "envMapIntensity": 1
+        },
+        "EE_rigidbody": {
+          "type": "fixed",
+          "ccd": false,
+          "allowRolling": true,
+          "enabledRotations": [
+            true,
+            true,
+            true
+          ],
+          "canSleep": true,
+          "gravityScale": 1
+        }
+      }
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "extensionsUsed": [
+    "EE_uuid",
+    "EE_envmapbake",
+    "EE_fog",
+    "EE_camera_settings",
+    "EE_postprocessing",
+    "EE_render_settings",
+    "EE_scene_settings",
+    "EE_visible",
+    "EE_scene_preview_camera",
+    "EE_skybox",
+    "EE_spawn_point",
+    "EE_directional_light",
+    "EE_model",
+    "EE_shadow",
+    "EE_envmap",
+    "EE_rigidbody",
+    "IR_override"
+  ],
+  "extensions": {
+    "IR_override": {
+      "4f1a8fc4-d3c4-44e2-9309-ac4ab894d3e9": [
+        {
+          "op": "replace",
+          "path": "/material-1/IR_material/parameters/color",
+          "value": {
+            "isColor": true,
+            "r": 1,
+            "g": 1,
+            "b": 1
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/material-1/IR_material/parameters/color/r",
+          "value": 1
+        },
+        {
+          "op": "replace",
+          "path": "/material-1/IR_material/parameters/color/g",
+          "value": 1
+        },
+        {
+          "op": "replace",
+          "path": "/material-1/IR_material/parameters/color/b",
+          "value": 1
+        },
+        {
+          "op": "replace",
+          "path": "/material-1/IR_material/parameters/map",
+          "value": ""
+        },
+        {
+          "op": "add",
+          "path": "/material-1/IR_material/parameters/alphaMap",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/material-0/IR_material/parameters/color",
+          "value": {
+            "isColor": true,
+            "r": 1,
+            "g": 1,
+            "b": 1
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/material-0/IR_material/parameters/color/r",
+          "value": 0.5457244613615395
+        },
+        {
+          "op": "replace",
+          "path": "/material-0/IR_material/parameters/color/g",
+          "value": 0.7156935005005721
+        },
+        {
+          "op": "replace",
+          "path": "/material-0/IR_material/parameters/color/b",
+          "value": 0.9646862478936612
+        },
+        {
+          "op": "add",
+          "path": "/material-1/IR_triplanar_mapping",
+          "value": {
+            "diffuseMap1": null,
+            "diffuseMap2": null,
+            "diffuseMap3": null,
+            "normalMap1": null,
+            "normalMap2": null,
+            "normalMap3": null,
+            "texScale1": {
+              "x": 0.1,
+              "y": 0.1
+            },
+            "texScale2": {
+              "x": 0.1,
+              "y": 0.1
+            },
+            "texScale3": {
+              "x": 0.1,
+              "y": 0.1
+            },
+            "blendSharpness": 2,
+            "normalScale": 1,
+            "peakHeight": 10
+          }
+        },
+        {
+          "op": "replace",
+          "path": "/material-1/IR_triplanar_mapping/diffuseMap1",
+          "value": "__$project$__/ir-engine/ir-ethereal-village/assets/512x_foliage_coarse01.png?hash=30dbc5"
+        },
+        {
+          "op": "replace",
+          "path": "/material-1/IR_triplanar_mapping/diffuseMap2",
+          "value": "__$project$__/ir-engine/ir-ethereal-village/assets/rock_weathered_10.png?hash=44ae67"
+        },
+        {
+          "op": "replace",
+          "path": "/material-1/IR_triplanar_mapping/diffuseMap3",
+          "value": "__$project$__/ir-engine/ir-ethereal-village/assets/snow01_preview.jpg?hash=6ed358"
+        },
+        {
+          "op": "replace",
+          "path": "/material-1/IR_triplanar_mapping/blendSharpness",
+          "value": 0.8
+        },
+        {
+          "op": "replace",
+          "path": "/material-1/IR_triplanar_mapping/peakHeight",
+          "value": 80
+        }
+      ]
+    }
+  }
+}

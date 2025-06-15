@@ -1,3 +1,3 @@
-### Ethereal Engine Project
+### Ethereal Village
 
-This is an Ethereal Engine project.
+A cozy medieval village.
