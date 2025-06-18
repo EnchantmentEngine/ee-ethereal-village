@@ -35,6 +35,22 @@
     "thumbnailKey": "projects/ir-engine/ir-ethereal-village/public/thumbnails/07b908cd491c88a8dba3da806f10544418f0feb455adad.png",
     "thumbnailMode": "automatic"
   },
+  "assets/grass-heightmap.png": {
+    "type": "file",
+    "tags": [
+      "Image"
+    ],
+    "dependencies": [],
+    "name": "grass-heightmap.png"
+  },
+  "assets/grass-mask.png": {
+    "type": "file",
+    "tags": [
+      "Image"
+    ],
+    "dependencies": [],
+    "name": "grass-mask.png"
+  },
   "assets/rock_weathered_10.png": {
     "type": "file",
     "tags": [
