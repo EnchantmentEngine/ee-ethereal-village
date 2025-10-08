@@ -6,7 +6,7 @@
     ],
     "dependencies": [],
     "name": "512x_foliage_coarse01.png",
-    "thumbnailKey": "projects/ir-engine/ir-ethereal-village/public/thumbnails/e6862423e4e075189b563a53c2145bd568a43c994b9712.png",
+    "thumbnailKey": "projects/enchantmentengine/ee-ethereal-village/public/thumbnails/e6862423e4e075189b563a53c2145bd568a43c994b9712.png",
     "thumbnailMode": "automatic"
   },
   "assets/colliders.glb": {
@@ -32,7 +32,7 @@
     ],
     "dependencies": [],
     "name": "ethereal_village.glb",
-    "thumbnailKey": "projects/ir-engine/ir-ethereal-village/public/thumbnails/07b908cd491c88a8dba3da806f10544418f0feb455adad.png",
+    "thumbnailKey": "projects/enchantmentengine/ee-ethereal-village/public/thumbnails/07b908cd491c88a8dba3da806f10544418f0feb455adad.png",
     "thumbnailMode": "automatic"
   },
   "assets/grass-heightmap.png": {
@@ -58,7 +58,7 @@
     ],
     "dependencies": [],
     "name": "rock_weathered_10.png",
-    "thumbnailKey": "projects/ir-engine/ir-ethereal-village/public/thumbnails/6a2c9eeff532fb3a430e520e2feccfcab2326231ecf712.png",
+    "thumbnailKey": "projects/enchantmentengine/ee-ethereal-village/public/thumbnails/6a2c9eeff532fb3a430e520e2feccfcab2326231ecf712.png",
     "thumbnailMode": "automatic"
   },
   "assets/snow01_preview.jpg": {
@@ -68,7 +68,7 @@
     ],
     "dependencies": [],
     "name": "snow01_preview.jpg",
-    "thumbnailKey": "projects/ir-engine/ir-ethereal-village/public/thumbnails/e96f88c6cd0321e951ddd81d7d12ba2fca5dc54a33ff28.png",
+    "thumbnailKey": "projects/enchantmentengine/ee-ethereal-village/public/thumbnails/e96f88c6cd0321e951ddd81d7d12ba2fca5dc54a33ff28.png",
     "thumbnailMode": "automatic"
   },
   "assets/terrain-collision.glb": {
@@ -102,7 +102,7 @@
     ],
     "dependencies": [],
     "name": "village.gltf",
-    "thumbnailKey": "projects/ir-engine/ir-ethereal-village/public/thumbnails/village.thumbnail.jpg",
+    "thumbnailKey": "projects/enchantmentengine/ee-ethereal-village/public/thumbnails/village.thumbnail.jpg",
     "thumbnailMode": "custom"
   }
 }
