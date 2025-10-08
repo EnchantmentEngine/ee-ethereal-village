@@ -364,12 +364,12 @@
       "name": "scene preview camera",
       "matrix": [
         0.99290530989357,
-        -1.0928757898653885e-14,
+        -1.0930492622129862e-14,
         -0.11890771877869771,
         0,
-        0.022111002227911514,
-        0.9825590300083844,
-        0.18463167693941357,
+        0.02211100222791151,
+        0.9825590300083843,
+        0.18463167693941354,
         0,
         0.11683385282370498,
         -0.18595094124252962,
@@ -484,7 +484,7 @@
           "entityID": "61ec7799-8bdb-4b95-bf5f-6b090dd0be45"
         },
         "EE_model": {
-          "src": "__$project$__/enchantmentengine/ee-ethereal-village/assets/ethereal_village.glb?hash=4faa5d",
+          "src": "__$project$__/enchantmentengine/ee-ethereal-village/assets/ethereal_village-transformed.glb",
           "cameraOcclusion": true,
           "applyColliders": false,
           "shape": "box"
@@ -544,6 +544,24 @@
     },
     {
       "name": "terrain",
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
       "extensions": {
         "EE_uuid": {
           "entityID": "4f1a8fc4-d3c4-44e2-9309-ac4ab894d3e9"
@@ -692,32 +710,25 @@
           "path": "/material-1/IR_material/parameters/color",
           "value": {
             "isColor": true,
-            "r": 0.04373502925049377,
-            "g": 0.02217388478862708,
-            "b": 0.02217388478862708
+            "r": 1,
+            "g": 1,
+            "b": 1
           }
         },
         {
           "op": "replace",
           "path": "/material-1/IR_material/parameters/color/r",
-          "value": 0.04970656597728775
+          "value": 0.6104955708001716
         },
         {
           "op": "replace",
           "path": "/material-1/IR_material/parameters/color/g",
-          "value": 0.15592646369776456
+          "value": 0.7529422167708612
         },
         {
           "op": "replace",
           "path": "/material-1/IR_material/parameters/color/b",
-          "value": 0.040915196900556984
-        },
-        {
-          "op": "add",
-          "path": "/material-1/IR_material/parameters/map",
-          "value": {
-            "source": "__$project$__/enchantmentengine/ee-ethereal-village/assets/512x_foliage_coarse01.png?hash=30dbc5"
-          }
+          "value": 0.29613827078752575
         }
       ]
     }
