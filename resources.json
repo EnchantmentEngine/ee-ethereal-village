@@ -15,7 +15,12 @@
       "Model"
     ],
     "dependencies": [],
-    "name": "colliders.glb"
+    "name": "colliders.glb",
+    "thumbnailKey": "projects/enchantmentengine/ee-ethereal-village/public/thumbnails/3bf4dd3681a338c1e0c6892ff780c0644118ba8bd76227.png",
+    "thumbnailMode": "automatic",
+    "width": 179.55,
+    "height": 48.31,
+    "depth": 205.48
   },
   "assets/ethereal_village-transformed.glb": {
     "type": "file",
@@ -23,7 +28,12 @@
       "Model"
     ],
     "dependencies": [],
-    "name": "ethereal_village-transformed.glb"
+    "name": "ethereal_village-transformed.glb",
+    "thumbnailKey": "projects/enchantmentengine/ee-ethereal-village/public/thumbnails/8521708b17c738360ec6a2a25270e7711cd352f1418cf1.png",
+    "thumbnailMode": "automatic",
+    "width": 426.63,
+    "height": 314.99,
+    "depth": 392.91
   },
   "assets/ethereal_village.glb": {
     "type": "file",
@@ -41,7 +51,9 @@
       "Image"
     ],
     "dependencies": [],
-    "name": "grass-heightmap.png"
+    "name": "grass-heightmap.png",
+    "thumbnailKey": "projects/enchantmentengine/ee-ethereal-village/public/thumbnails/8410286363d7b5e83f653d7d9d60114f1d63f2bdac6166.png",
+    "thumbnailMode": "automatic"
   },
   "assets/grass-mask.png": {
     "type": "file",
@@ -49,7 +61,9 @@
       "Image"
     ],
     "dependencies": [],
-    "name": "grass-mask.png"
+    "name": "grass-mask.png",
+    "thumbnailKey": "projects/enchantmentengine/ee-ethereal-village/public/thumbnails/ad7597767f567766ab47c9c8dcae4e80bfc2b38e374232.png",
+    "thumbnailMode": "automatic"
   },
   "assets/rock_weathered_10.png": {
     "type": "file",
@@ -77,7 +91,12 @@
       "Model"
     ],
     "dependencies": [],
-    "name": "terrain-collision.glb"
+    "name": "terrain-collision.glb",
+    "thumbnailKey": "projects/enchantmentengine/ee-ethereal-village/public/thumbnails/f99f41c7e8452c529fbaf29f857b56919bd41cf53e97d9.png",
+    "thumbnailMode": "automatic",
+    "width": 206.31,
+    "height": 34.75,
+    "depth": 210.22
   },
   "assets/terrain.glb": {
     "type": "file",
@@ -85,7 +104,12 @@
       "Model"
     ],
     "dependencies": [],
-    "name": "terrain.glb"
+    "name": "terrain.glb",
+    "thumbnailKey": "projects/enchantmentengine/ee-ethereal-village/public/thumbnails/6f24c4abff89ff7bf22f5782d4dc1be35579c4fd5772f9.png",
+    "thumbnailMode": "automatic",
+    "width": 529.28,
+    "height": 122.28,
+    "depth": 570.79
   },
   "assets/terrain2.glb": {
     "type": "file",
@@ -93,7 +117,12 @@
       "Model"
     ],
     "dependencies": [],
-    "name": "terrain2.glb"
+    "name": "terrain2.glb",
+    "thumbnailKey": "projects/enchantmentengine/ee-ethereal-village/public/thumbnails/e7831c8a49c96d0ffe88b45ef6ac7999706691dfb147dd.png",
+    "thumbnailMode": "automatic",
+    "width": 529.28,
+    "height": 122.28,
+    "depth": 570.79
   },
   "public/scenes/village.gltf": {
     "type": "scene",

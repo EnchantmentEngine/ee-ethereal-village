@@ -49,7 +49,7 @@
           "canCameraFirstPerson": true,
           "canCameraThirdPerson": true,
           "canCameraTopDown": true,
-          "isFistPersonFreeCamera": true,
+          "isFirstPersonFreeCamera": true,
           "isThirdPersonFreeCamera": true,
           "isTopDownFreeCamera": false,
           "firstPersonCameraLimits": 360,
@@ -363,9 +363,22 @@
     {
       "name": "scene preview camera",
       "matrix": [
-        0.9929053098935701, -1.107273994715996e-14, -0.11890771877869771, 0, 0.022111002227911368, 0.9825590300083846,
-        0.18463167693941357, 0, 0.11683385282370498, -0.1859509412425296, 0.975588078179201, 0, 55.27397916988161,
-        11.920701387736658, 58.31902523515636, 1
+        0.99290530989357,
+        -1.0928757898653885e-14,
+        -0.11890771877869771,
+        0,
+        0.022111002227911514,
+        0.9825590300083844,
+        0.18463167693941357,
+        0,
+        0.11683385282370498,
+        -0.18595094124252962,
+        0.9755880781792009,
+        0,
+        55.27397916988161,
+        11.920701387736658,
+        58.31902523515636,
+        1
       ],
       "extensions": {
         "EE_uuid": {
@@ -402,8 +415,21 @@
     {
       "name": "spawn point",
       "matrix": [
-        -1, 1.0106430996148606e-15, -1.224646852585167e-16, 0, 1.0106430996148606e-15, 1, 1.2246467991473547e-16, 0,
-        1.2246468525851686e-16, 1.2246467991473532e-16, -1, 0, 55.26190000895484, 10.169746412899563, 58.41344773280081,
+        -1,
+        1.0106430996148606e-15,
+        -1.224646852585167e-16,
+        0,
+        1.0106430996148606e-15,
+        1,
+        1.2246467991473547e-16,
+        0,
+        1.2246468525851686e-16,
+        1.2246467991473532e-16,
+        -1,
+        0,
+        55.26190000895484,
+        10.169746412899563,
+        58.41344773280081,
         1
       ],
       "extensions": {
@@ -419,9 +445,22 @@
     {
       "name": "directional light",
       "matrix": [
-        0.9460853588275455, 3.3306690738754706e-16, -0.32391741819814956, 0, 0.3040995162518745, 0.3444135369357192,
-        0.8882020039331165, 0, 0.1115615436767114, -0.9388180417820201, 0.3258446046768936, 0, -2.9000000000000004, 0,
-        0, 1
+        0.9460853588275455,
+        3.3306690738754706e-16,
+        -0.32391741819814956,
+        0,
+        0.3040995162518745,
+        0.3444135369357192,
+        0.8882020039331165,
+        0,
+        0.1115615436767114,
+        -0.9388180417820201,
+        0.3258446046768936,
+        0,
+        -2.9000000000000004,
+        0,
+        0,
+        1
       ],
       "extensions": {
         "EE_uuid": {
@@ -493,7 +532,11 @@
           "type": "fixed",
           "ccd": false,
           "allowRolling": true,
-          "enabledRotations": [true, true, true],
+          "enabledRotations": [
+            true,
+            true,
+            true
+          ],
           "canSleep": true,
           "gravityScale": 1
         }
@@ -554,7 +597,11 @@
           "type": "fixed",
           "ccd": false,
           "allowRolling": true,
-          "enabledRotations": [true, true, true],
+          "enabledRotations": [
+            true,
+            true,
+            true
+          ],
           "canSleep": true,
           "gravityScale": 1
         }
@@ -572,7 +619,6 @@
           "receive": true
         },
         "EE_variant": {
-          "heuristic": "DISTANCE",
           "levels": [
             {
               "src": "__$project$__/enchantmentengine/ee-development-test-suite/assets/LOD/grass/TundraGrass_LOD0_Var3.gltf",
@@ -595,17 +641,8 @@
                 "maxDistance": 256
               }
             }
-          ]
-        },
-        "IR_instancing_placement": {
-          "width": 2048,
-          "length": 2048,
-          "height": 2048,
-          "count": 10000,
-          "heightmapTexture": "__$project$__/enchantmentengine/ee-ethereal-village/assets/grass-heightmap.png",
-          "maskTexture": "__$project$__/enchantmentengine/ee-ethereal-village/assets/grass-mask.png",
-          "randomPositionWeight": 0,
-          "randomRotationWeight": 0
+          ],
+          "heuristic": "DISTANCE"
         }
       }
     }
@@ -613,7 +650,18 @@
   "scene": 0,
   "scenes": [
     {
-      "nodes": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
     }
   ],
   "extensionsUsed": [
@@ -633,9 +681,8 @@
     "EE_shadow",
     "EE_envmap",
     "EE_rigidbody",
-    "IR_override",
-    "IR_instancing_placement",
-    "EE_variant"
+    "EE_variant",
+    "IR_override"
   ],
   "extensions": {
     "IR_override": {
@@ -645,112 +692,32 @@
           "path": "/material-1/IR_material/parameters/color",
           "value": {
             "isColor": true,
-            "r": 1,
-            "g": 1,
-            "b": 1
+            "r": 0.04373502925049377,
+            "g": 0.02217388478862708,
+            "b": 0.02217388478862708
           }
         },
         {
           "op": "replace",
           "path": "/material-1/IR_material/parameters/color/r",
-          "value": 1
+          "value": 0.04970656597728775
         },
         {
           "op": "replace",
           "path": "/material-1/IR_material/parameters/color/g",
-          "value": 1
+          "value": 0.15592646369776456
         },
         {
           "op": "replace",
           "path": "/material-1/IR_material/parameters/color/b",
-          "value": 1
+          "value": 0.040915196900556984
         },
         {
-          "op": "replace",
+          "op": "add",
           "path": "/material-1/IR_material/parameters/map",
-          "value": ""
-        },
-        {
-          "op": "add",
-          "path": "/material-1/IR_material/parameters/alphaMap",
-          "value": null
-        },
-        {
-          "op": "replace",
-          "path": "/material-0/IR_material/parameters/color",
           "value": {
-            "isColor": true,
-            "r": 1,
-            "g": 1,
-            "b": 1
+            "source": "__$project$__/enchantmentengine/ee-ethereal-village/assets/512x_foliage_coarse01.png?hash=30dbc5"
           }
-        },
-        {
-          "op": "replace",
-          "path": "/material-0/IR_material/parameters/color/r",
-          "value": 0.5457244613615395
-        },
-        {
-          "op": "replace",
-          "path": "/material-0/IR_material/parameters/color/g",
-          "value": 0.7156935005005721
-        },
-        {
-          "op": "replace",
-          "path": "/material-0/IR_material/parameters/color/b",
-          "value": 0.9646862478936612
-        },
-        {
-          "op": "add",
-          "path": "/material-1/IR_triplanar_mapping",
-          "value": {
-            "diffuseMap1": null,
-            "diffuseMap2": null,
-            "diffuseMap3": null,
-            "normalMap1": null,
-            "normalMap2": null,
-            "normalMap3": null,
-            "texScale1": {
-              "x": 0.1,
-              "y": 0.1
-            },
-            "texScale2": {
-              "x": 0.1,
-              "y": 0.1
-            },
-            "texScale3": {
-              "x": 0.1,
-              "y": 0.1
-            },
-            "blendSharpness": 2,
-            "normalScale": 1,
-            "peakHeight": 10
-          }
-        },
-        {
-          "op": "replace",
-          "path": "/material-1/IR_triplanar_mapping/diffuseMap1",
-          "value": "__$project$__/enchantmentengine/ee-ethereal-village/assets/512x_foliage_coarse01.png?hash=30dbc5"
-        },
-        {
-          "op": "replace",
-          "path": "/material-1/IR_triplanar_mapping/diffuseMap2",
-          "value": "__$project$__/enchantmentengine/ee-ethereal-village/assets/rock_weathered_10.png?hash=44ae67"
-        },
-        {
-          "op": "replace",
-          "path": "/material-1/IR_triplanar_mapping/diffuseMap3",
-          "value": "__$project$__/enchantmentengine/ee-ethereal-village/assets/snow01_preview.jpg?hash=6ed358"
-        },
-        {
-          "op": "replace",
-          "path": "/material-1/IR_triplanar_mapping/blendSharpness",
-          "value": 0.8
-        },
-        {
-          "op": "replace",
-          "path": "/material-1/IR_triplanar_mapping/peakHeight",
-          "value": 80
         }
       ]
     }
